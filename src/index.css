@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: #141414;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.gc-content{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.gc-list-item{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  
+  position: relative;
+  width: 50vw;
+}
+
+.gc-list-item button{
+  border: none; 
+  padding: 10px 15px;
+  background-color: #007ACC;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gc-list-item button:hover{
+  filter: brightness(1.2);
+}
+.gc-list-item a+a button{
+  
+  background-color: #cf3737;
+}
+
+.gc-list-item span{
+  /* flex: 100%; */
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #8a8ad8;
+  /* padding: 15px; */
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.gc-list-item div:first-of-type{
+  display: flex;
+  align-items: center;
+}
+
+.gc-list-item *:not(:last-child){
+  margin-right: 30px;
+}
+
+.menulist{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menulist:active,
+.menulist:visited,
+.menulist:link{
+  color: white;
+}
+
+.menulist:hover{
+  color: #b8b8b8;
+}
+
+form{
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form textarea{
+  resize: none;
+  min-height: 300px;
+}
+
+form button{
+  padding: 15px 30px;
+  border: none;
+  margin-top: 15px;
+}

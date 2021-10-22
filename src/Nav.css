@@ -1,0 +1,11 @@
+.primarymenu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.primarymenu > a{
+    margin-left: 10px;
+    color: rgb(0, 89, 255);
+    text-decoration: none;
+}
